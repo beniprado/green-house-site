@@ -167,7 +167,7 @@ div#div-ticle > h1 {
 
 footer {
     text-align: center;
-    background-color: #31594B;
+    background-color: #46658c;
     padding: 5px;
 }
 
@@ -179,6 +179,7 @@ footer {
 
 .close {
     display: none;
+    margin-right: 10px;
     transition: opacity 0.3s, transform 0.3s;
 }
 
@@ -202,7 +203,8 @@ footer {
     }
     aside{
         display: flex;
-        justify-content: center
+        flex-direction: column;
+        align-items: center;
     }
     div#div-side > h1{
         font-size: 27px;
@@ -216,7 +218,8 @@ footer {
     }
     article{
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
     }
     div#div-ticle > h1{
         font-size: 27px;
@@ -234,14 +237,17 @@ footer {
         align-items: center;
         padding: 20px 0;
         margin: 0;
-        background-color: rgba(119, 217, 181, 0.6);
+        background-color: rgba(39, 203, 143, 0.6);
         z-index: 1000; 
         transition: opacity 0.3s, transform 0.3s;
     } 
 
     nav > a {
         margin: 10px 0;
+        color: #003a24;
         transition: color 0.3s, text-decoration 0.3s;
+    } a#ap{
+        border: 2px solid #003a24;
     }
 
     .menu {
@@ -255,13 +261,14 @@ footer {
     }
 
     img#img-phone {
-        width: 150px; /* Ajuste a largura da imagem no mobile */
-        margin-top: 20px; /* Adicionar margem para evitar sobreposição */
+        width: 150px;
+        margin-top: 20px; 
     }
 
     section {
-        flex-direction: column; /* Alterar a direção do layout para coluna no mobile */
+        flex-direction: column; 
         align-items: center;
         transition: all 0.3s;
     }
+
 }
