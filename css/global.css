@@ -14,13 +14,22 @@
     font-style: normal;
 }
 
-*{
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+* {
     margin: 0;
     padding: 0;
 }
 
 html {
     scroll-behavior: smooth;
+    image-rendering: optimizeSpeed;
 }
 
 body {
@@ -48,7 +57,7 @@ h1#h1-title {
     padding: 1px 0px 0px 8px;
     font-family: inter, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #31594B;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.300);
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.250);
 }
 
 h1 > img { 
@@ -94,6 +103,7 @@ a#ap:hover {
 
 section {
     display: flex;
+    align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
     padding: 40px 1px;
@@ -102,7 +112,7 @@ section {
 
 img#img-phone {
     width: 210px;
-    rotate: 3deg;
+    transform: rotate(3deg);
     filter: drop-shadow(1px 2px 6px rgba(0, 0, 0, 0.6));
     transition: width 0.3s, margin-top 0.3s;
 }
@@ -149,17 +159,17 @@ div#div-side > p {
     color: #BDF2DF;
 }
 
-img#img-proto{
+img#img-proto {
     width: 35%;
     height: auto;
     margin: 165px 0px 0px 0px;
     filter: drop-shadow(1px 2px 6px rgba(0, 0, 0, 0.799)); 
-    rotate: -90deg;
+    transform: rotate(-90deg);
 }
 
-article {
+/* article {
     
-}
+} */
 
 div#div-ticle {
     display: block;
@@ -177,10 +187,11 @@ div#div-ticle > h1 {
     border-radius: 0px 0px 30px 0px;
     color: #BDF2DF;
 }
+
 article > p {
     font-size: 34px;
     margin: 25px;
-    font-family: itim,'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: itim, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: start;
     color: black;
 }
@@ -190,22 +201,9 @@ details {
     font-weight: 800;
     margin: 25px;
     font-size: 20px;
-    /* border: 2px solid #31594B;  */
     border-radius: 10px;
     padding: 10px; 
-    background-color: #BDF2DF; 
-    position: relative;
-    z-index: 1;
-}
-
-div > h1{
-    margin: 10px;
-}
-div > ul,ol{
-margin-left: 40px;
-}
-li{
-    margin: 10px;
+    background-color: #BDF2DF;
 }
 
 details summary {
@@ -216,11 +214,32 @@ details summary {
     border-radius: 10px;
 }
 
+div > h1 {
+    margin: 10px;
+}
+
+div > ul, ol {
+    margin-left: 40px;
+}
+
+li {
+    margin: 10px;
+}
+
+div > a{
+    color: black;
+    font-size: 25px;
+    padding: 8px;
+    text-decoration: none;
+    text-decoration: underline;
+}
 
 footer {
     text-align: center;
     background-color: #46658c;
     padding: 5px;
+    color: black;
+    font-weight: 900;
 }
 
 .menu {
@@ -240,43 +259,52 @@ footer {
     h1#h1-title {
         font-size: 25px;
     }
-    h1 > img{
+    h1 > img {
         width: 30px;
         border-radius: 4px;
     }
-    p#p-subtitle{
+    p#p-subtitle {
         font-size: 35px;
     }
-    img#img-link{
+    img#img-link {
         display: none;
     }
-    aside{
+    aside {
         display: flex;
         flex-direction: column;
         align-items: center;
         height: 700px;
     }
-    div#div-side > h1{
+    div#div-side > h1 {
         font-size: 27px;
         border-radius: 0px 0px 30px 30px;
         padding: 10px;
     }
-    div#div-side > p{
+    div#div-side > p {
         display: block;
         font-size: 22px;
-        max-width: 65dvi;
+        max-width: 67dvi; 
     }
-    article{
+    article {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    img#img-proto{
+    details summary {
+        font-size: 25px;
+    }
+    div > h1 li {
+        font-size: 19px;
+    }
+    .obj {
+        font-size: 20px;
+    }
+    img#img-proto {
         width: 45%;
         margin: 0 auto;
         margin-top: 80px;
     }
-    div#div-ticle > h1{
+    div#div-ticle > h1 {
         font-size: 27px;
         border-radius: 0px 0px 30px 30px;
     }
@@ -304,7 +332,9 @@ footer {
         margin: 10px 0;
         color: #003a24;
         transition: color 0.3s, text-decoration 0.3s;
-    } a#ap{
+    }
+
+    a#ap {
         border: 2px solid #003a24;
     }
 
@@ -328,5 +358,4 @@ footer {
         align-items: center;
         transition: all 0.3s;
     }
-
 }
