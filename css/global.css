@@ -293,8 +293,9 @@ footer {
     details summary {
         font-size: 25px;
     }
-    div > h1 li {
-        font-size: 19px;
+    .deth1{
+        font-size: 20px;
+        text-decoration: underline;
     }
     .obj {
         font-size: 20px;

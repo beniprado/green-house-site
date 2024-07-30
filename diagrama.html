@@ -11,19 +11,23 @@
     <title>Diagrama</title>
     <style>
         main{
-            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px;
+            text-align: center;
         } 
         img{
             margin: 0 auto;
             text-align: center;
-            width: 500px;
+            width: 450px;
         }
         div{
             display: flex;
             flex-direction: column;
             align-items: center;
         }
-        div > a{
+        .ap{
             font-family: itim;
             color: black;
             font-size: 25px;
@@ -33,7 +37,7 @@
             border-radius: 15px;
             text-decoration: none;
         }
-        div > a:hover{
+        .ap:hover{
             background-color: #2d8e6c;
         }
         span{
@@ -41,6 +45,11 @@
             padding: 10px;
             background-color: #31594B;
             border-radius: 10px;
+        }
+        @media screen and (max-width: 500px) {
+            img{
+                width: 95%;
+            }
         }
 
     </style>
@@ -50,8 +59,8 @@
         <a href="/index.html"><span class="material-symbols-rounded">home</span></a>
         <div>
             <img src="imgs/Diagrama de atividade.png" alt="Diagrama" loading="eager">
-            <a href="" target="_blank">Apoie</a>
         </div>
+        <a href="" target="_blank" class="ap">Apoie</a>
     </main>
 </body>
 </html>
