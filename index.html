@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="theme-color" content="#77D9B5">
-    <meta name="description" content="Green-House é um que projeto oferece uma base sólida para monitoramento de plantas utilizando IoT. Pode ser expandido com mais sensores ou funcionalidades conforme necessário. A simplicidade do sistema permite fácil entendimento e implementação, sendo ideal para iniciantes em IoT e automação de jardinagem.">
+    <meta name="description"content="Green-House é um que projeto oferece uma base sólida para monitoramento de plantas utilizando IoT. Pode ser expandido com mais sensores ou funcionalidades conforme necessário. A simplicidade do sistema permite fácil entendimento e implementação, sendo ideal para iniciantes em IoT e automação de jardinagem.">
     <link rel="stylesheet" href="/css/global.css">
     <script defer src="app.js"></script>
     <link rel="shortcut icon" href="/imgs/favicon.ico" type="image/x-icon">
@@ -30,43 +30,52 @@
         <aside id="Sistema">
             <div id="div-side">
                 <h1>Sistema</h1>
-                <p>Nosso sistema de sensores coleta dados continuamente e os envia para o nosso site, permitindo que você os acesse em tempo real. Assim, você pode tomar decisões informadas sobre rega, iluminação e temperatura, garantindo que suas plantas estejam sempre nas melhores condições.</p>
+                <p>Nosso sistema de sensores coleta dados continuamente e os envia para o nosso site, permitindo que
+                    você os acesse em tempo real. Assim, você pode tomar decisões informadas sobre rega, iluminação e
+                    temperatura, garantindo que suas plantas estejam sempre nas melhores condições.</p>
             </div>
-                <img src="imgs/protótipo.png" alt="protótipo" id="img-proto">
+            <img src="imgs/protótipo.png" alt="protótipo" id="img-proto">
         </aside>
         <article id="Objetivo">
             <div id="div-ticle">
                 <h1>Objetivo</h1>
             </div>
-                <p class="obj">O objetivo deste projeto é desenvolver um sistema IoT simples para realizar medições precisas de uma planta e exibir essas informações em um painel web. O sistema permitirá monitorar a umidade do solo, a temperatura e umidade do ambiente, bem como a intensidade da luz, ajudando no cuidado e manutenção das plantas
-                </p>
-                <p class="obj">Este projeto oferece uma base sólida para monitoramento de plantas utilizando IoT. Pode ser expandido com mais sensores ou funcionalidades conforme necessário. A simplicidade do sistema permite fácil entendimento e implementação, sendo ideal para iniciantes em IoT e automação de jardinagem.</p>
-                <details>
-                    <summary>Detalhes</summary>
-                    <div>
-                        <h1 class="deth1">Componentes Utilizados</h1>
-                        <ul>
-                            <li>Microcontrolador ESP32: Coleta dados dos sensores e transmite para o painel web.</li>
-                            <li>Sensor DHT11: Mede a umidade e temperatura do ambiente.</li>
-                            <li>Sensor de Umidade do Solo: Mede a umidade do solo onde a planta está plantada.</li>
-                            <li>LDR (Light Dependent Resistor): Mede a intensidade da luz no ambiente.</li>
-                        </ul>
-                        <h1 class="deth1">Arquitetura do Sistema</h1>
-                        <ol>
-                            <li>Sensores: Capturam dados de temperatura, umidade do ar, umidade do solo e intensidade da luz.</li>
-                            <li>Microcontrolador ESP32: Processa e envia os dados dos sensores para o servidor.</li>
-                            <li>Servidor Web: Recebe e exibe os dados do ESP32 em um painel web acessível via navegador.</li>
-                        </ol>
-                        <h1 class="deth1">Funcionalidades</h1>
-                        <ul>
-                            <li>Medição da Temperatura e Umidade do Ar: Realizada pelo sensor DHT11.</li>
-                            <li>Medição da Umidade do Solo: Fornecida pelo sensor de umidade do solo.</li>
-                            <li>Medição da Intensidade da Luz: Capturada pelo LDR.</li>
-                            <li>Exibição dos Dados: Apresentada de forma clara em um painel web.</li>
-                        </ul>
-                        <a href="diagrama.html">Diagrama&#128279;</a>
-                    </div>
-                </details>
+            <p class="obj">O objetivo deste projeto é desenvolver um sistema IoT simples para realizar medições precisas
+                de uma planta e exibir essas informações em um painel web. O sistema permitirá monitorar a umidade do
+                solo, a temperatura e umidade do ambiente, bem como a intensidade da luz, ajudando no cuidado e
+                manutenção das plantas
+            </p>
+            <p class="obj">Este projeto oferece uma base sólida para monitoramento de plantas utilizando IoT. Pode ser
+                expandido com mais sensores ou funcionalidades conforme necessário. A simplicidade do sistema permite
+                fácil entendimento e implementação, sendo ideal para iniciantes em IoT e automação de jardinagem.</p>
+            <details>
+                <summary>Detalhes</summary>
+                <div>
+                    <h1 class="deth1">Componentes Utilizados</h1>
+                    <ul>
+                        <li>Microcontrolador ESP32: Coleta dados dos sensores e transmite para o painel web.</li>
+                        <li>Sensor DHT11: Mede a umidade e temperatura do ambiente.</li>
+                        <li>Sensor de Umidade do Solo: Mede a umidade do solo onde a planta está plantada.</li>
+                        <li>LDR (Light Dependent Resistor): Mede a intensidade da luz no ambiente.</li>
+                    </ul>
+                    <h1 class="deth1">Arquitetura do Sistema</h1>
+                    <ol>
+                        <li>Sensores: Capturam dados de temperatura, umidade do ar, umidade do solo e intensidade da
+                            luz.</li>
+                        <li>Microcontrolador ESP32: Processa e envia os dados dos sensores para o servidor.</li>
+                        <li>Servidor Web: Recebe e exibe os dados do ESP32 em um painel web acessível via navegador.
+                        </li>
+                    </ol>
+                    <h1 class="deth1">Funcionalidades</h1>
+                    <ul>
+                        <li>Medição da Temperatura e Umidade do Ar: Realizada pelo sensor DHT11.</li>
+                        <li>Medição da Umidade do Solo: Fornecida pelo sensor de umidade do solo.</li>
+                        <li>Medição da Intensidade da Luz: Capturada pelo LDR.</li>
+                        <li>Exibição dos Dados: Apresentada de forma clara em um painel web.</li>
+                    </ul>
+                    <a href="diagrama.html">Diagrama&#128279;</a>
+                </div>
+            </details>
         </article>
     </main>
     <footer>
