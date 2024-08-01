@@ -15,11 +15,11 @@
 }
 
 .material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
 }
 
 * {
@@ -54,13 +54,13 @@ header {
 h1#h1-title {
     display: flex;
     align-items: center;
-    padding: 1px 0px 0px 8px;
+    padding: 1px 0px 0px 15px;
     font-family: inter, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #31594B;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.250);
 }
 
-h1 > img { 
+h1>img {
     margin-left: 10px;
     border-radius: 9px;
     width: 50px;
@@ -73,7 +73,7 @@ nav {
     align-items: center;
 }
 
-nav > a {
+nav>a {
     font-family: inter, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: 600;
     font-size: 16px;
@@ -81,9 +81,9 @@ nav > a {
     text-decoration: none;
     color: #31594B;
     transition: color 0.3s, text-decoration 0.3s;
-} 
+}
 
-nav > a:hover {
+nav>a:hover {
     text-decoration: underline;
 }
 
@@ -106,7 +106,7 @@ section {
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
-    padding: 40px 1px;
+    padding: 5% 1px;
     transition: all 0.3s;
 }
 
@@ -131,8 +131,11 @@ img#img-link {
 }
 
 aside {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
     background-color: #31594B;
-    height: 660px;
+    height: 770px;
 }
 
 div#div-side {
@@ -140,7 +143,7 @@ div#div-side {
     float: right;
 }
 
-div#div-side > h1 {
+div#div-side>h1 {
     margin: 0;
     padding: 15px 40px;
     font-family: itim, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -152,31 +155,37 @@ div#div-side > h1 {
     text-align: center;
 }
 
-div#div-side > p {
+div#div-side>p {
     font-family: itim, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 34px;
-    width: 500px;
+    max-width: 700px;
     color: #BDF2DF;
 }
 
+picture {
+    display: block;
+}
+
 img#img-proto {
-    width: 35%;
-    height: auto;
+    display: inline;
+    width: 90%;
+    margin: auto;
+    max-width: 500px;
     margin: 165px 0px 0px 0px;
-    filter: drop-shadow(1px 2px 6px rgba(0, 0, 0, 0.799)); 
+    filter: drop-shadow(1px 2px 6px rgba(0, 0, 0, 0.799));
     transform: rotate(-90deg);
 }
 
-/* article {
-    
-} */
+article {
+    height: auto;
+}
 
 div#div-ticle {
     display: block;
     text-align: start;
 }
 
-div#div-ticle > h1 {
+div#div-ticle>h1 {
     display: inline-block;
     margin: 0;
     padding: 15px 100px;
@@ -188,7 +197,7 @@ div#div-ticle > h1 {
     color: #BDF2DF;
 }
 
-article > p {
+article>p {
     font-size: 34px;
     margin: 25px;
     font-family: itim, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -202,23 +211,24 @@ details {
     margin: 25px;
     font-size: 20px;
     border-radius: 10px;
-    padding: 10px; 
+    padding: 10px;
     background-color: #BDF2DF;
 }
 
 details summary {
     cursor: pointer;
-    font-size: 30px; 
-    font-weight: bold; 
-    padding: 10px; 
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px;
     border-radius: 10px;
 }
 
-div > h1 {
+div>h1 {
     margin: 10px;
 }
 
-div > ul, ol {
+div>ul,
+ol {
     margin-left: 40px;
 }
 
@@ -226,7 +236,7 @@ li {
     margin: 10px;
 }
 
-div > a{
+div>a {
     color: black;
     font-size: 25px;
     padding: 8px;
@@ -259,77 +269,99 @@ footer {
     h1#h1-title {
         font-size: 25px;
     }
-    h1 > img {
+
+    h1>img {
         width: 30px;
         border-radius: 4px;
     }
+
     p#p-subtitle {
-        font-size: 35px;
+        font-size: 7.5dvi;
+        max-width: 500px;
     }
+
     img#img-link {
         display: none;
     }
+
     aside {
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 700px;
+        height: 105%;
     }
-    div#div-side > h1 {
+
+    div#div-side>h1 {
         font-size: 27px;
         border-radius: 0px 0px 30px 30px;
         padding: 10px;
     }
-    div#div-side > p {
+
+    div#div-side>p {
         display: block;
         font-size: 22px;
-        max-width: 67dvi; 
+        max-width: 67dvi;
     }
+
+    details summary {
+        font-size: 25px;
+    }
+
+    .deth1 {
+        font-size: 20px;
+        text-decoration: underline;
+    }
+
+    .obj {
+        font-size: 20px;
+    }
+
+    img#img-proto {
+        width: 80%;
+        max-width: 350px;
+        margin: 0 auto;
+        margin-top: 25px;
+        padding: 25% 0%;
+    }
+
+    /* div#div-ticle{
+        display: block;
+    } */
+
+    div#div-ticle>h1 {
+        font-size: 27px;
+        /* padding: auto; */
+        border-radius: 0px 0px 30px 30px;
+    }
+
     article {
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-    details summary {
-        font-size: 25px;
-    }
-    .deth1{
-        font-size: 20px;
-        text-decoration: underline;
-    }
-    .obj {
-        font-size: 20px;
-    }
-    img#img-proto {
-        width: 45%;
-        margin: 0 auto;
-        margin-top: 80px;
-    }
-    div#div-ticle > h1 {
-        font-size: 27px;
-        border-radius: 0px 0px 30px 30px;
+        height: auto;
     }
 
-    article > p {
+    article>p {
         font-size: 24px;
     }
 
-    nav { 
-        display: none; /* Inicialmente oculto no mobile */
+    nav {
+        display: none;
+        /* Inicialmente oculto no mobile */
         position: absolute;
         flex-direction: column;
         top: 75px;
         right: 0;
-        width: 100%; 
+        width: 100%;
         align-items: center;
         padding: 20px 0;
         margin: 0;
         background-color: rgba(39, 203, 143, 0.6);
-        z-index: 1000; 
+        z-index: 1000;
         transition: opacity 0.3s, transform 0.3s;
-    } 
+    }
 
-    nav > a {
+    nav>a {
         margin: 10px 0;
         color: #003a24;
         transition: color 0.3s, text-decoration 0.3s;
@@ -351,11 +383,11 @@ footer {
 
     img#img-phone {
         width: 150px;
-        margin-top: 20px; 
+        margin-top: 20px;
     }
 
     section {
-        flex-direction: column; 
+        flex-direction: column;
         align-items: center;
         transition: all 0.3s;
     }
