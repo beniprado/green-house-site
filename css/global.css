@@ -14,6 +14,20 @@
     font-style: normal;
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+:root {
+    --animação: fadeIn .6s ease-in-out;
+    --manter: forwards;
+}
+
 .material-symbols-outlined {
     font-variation-settings:
         'FILL' 0,
@@ -35,6 +49,8 @@ html {
 body {
     background-color: #BDF2DF;
     margin: 0;
+    animation: var(--animação);
+    animation-fill-mode: var(--manter); 
 }
 
 img {
@@ -384,11 +400,22 @@ footer {
     img#img-phone {
         width: 150px;
         margin-top: 20px;
-    }
+    }   
 
     section {
         flex-direction: column;
         align-items: center;
         transition: all 0.3s;
+    }
+}
+@media(orientation: landscape) {
+    html {
+        max-width: 100dvw;
+        max-height: 100dvh;
+    }
+
+    body {
+        max-width: 100dvw;
+        max-height: 100dvh; 
     }
 }
