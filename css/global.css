@@ -44,6 +44,7 @@
 html {
     scroll-behavior: smooth;
     image-rendering: optimizeSpeed;
+    user-select: none;
 }
 
 body {
@@ -261,6 +262,30 @@ div>a {
     text-decoration: underline;
 }
 
+.author {
+    display: block;
+    padding: 50px;
+    font-size: 35px;
+    font-family: itim,Arial, Helvetica, sans-serif;
+    background-color: #31594B;
+    color: rgb(189, 242, 223);
+}
+
+.author >  ul {
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+}
+
+.author > ul >  li {
+    display: flex;
+    align-items: center;
+    align-content: center;   
+}
+
+.insta {
+    width: 40px;
+    margin-left: 10px;
+}
+
 footer {
     text-align: center;
     background-color: #46658c;
@@ -356,6 +381,14 @@ footer {
         flex-direction: column;
         align-items: center;
         height: auto;
+    }
+
+    .author {
+        font-size: 4dvw;
+    }
+    
+    .insta {
+        width: 5dvw;
     }
 
     article>p {
